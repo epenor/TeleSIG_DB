@@ -1,0 +1,11 @@
+
+CREATE TABLE Publicadores (
+  id_pub     Integer NOT NULL,
+  nombre_pub VarChar(50) NOT NULL,
+  ciudad     VarChar(50) NOT NULL,
+  estado     VarChar(50) NOT NULL, 
+  PRIMARY KEY (
+      id_pub
+  )
+) ;
+ALTER TABLE Publicadores COMMENT = '';
