@@ -1,0 +1,8 @@
+CREATE TABLE fotografias (
+  id_autor   VarChar(12) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  fotografia LongBLOB, 
+  PRIMARY KEY (
+      id_autor
+  )
+) ENGINE=InnoDB ROW_FORMAT=DYNAMIC DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+ALTER TABLE fotografias COMMENT = '';
