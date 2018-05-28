@@ -1,0 +1,55 @@
+CREATE TABLE Ventas (
+ id_tienda VarChar(8) NOT NULL,
+ num_orden VarChar(20) NOT NULL,
+ fecha     Date NOT NULL, 
+ PRIMARY KEY (id_tienda)) ;
+ 
+ /* Inserting data into table */
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('', '', NULL);
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('1006', '4', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('101', '1', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('102', '2', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('103', '3', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('104', '4', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('105', '5', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('106', '6', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('107', '7', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('108', '8', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('109', '9', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('110', '10', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('111', '11', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('112', '12', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('113', '13', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('114', '14', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('115', '15', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('116', '16', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('117', '17', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('118', '18', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('119', '19', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('120', '20', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('12019', '56', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('12023', '72', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2010', '20', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2012', '28', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2014', '36', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2015', '40', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2016', '44', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2021', '64', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2024', '76', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2026', '84', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2027', '88', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2028', '92', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2029', '96', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('20817', '48', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('209', '16', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('22018', '52', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('22020', '60', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2708', '12', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('28811', '24', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('4007', '8', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('62030', '100', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('72031', '104', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('89013', '32', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('92022', '68', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('92025', '80', '2018/05/17');
+/* 47 row(s) exported */
