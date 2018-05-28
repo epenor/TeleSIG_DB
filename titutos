@@ -1,4 +1,19 @@
-
+CREATE TABLE titulos (
+  id_titulo    VarChar(7) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  titulo       VarChar(30) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  tipo         VarChar(15) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  id_pub       VarChar(6) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  precio       Double,
+  avance       Double,
+  total_ventas Double,
+  notas        Text CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+  fecha_pub    DateTime NOT NULL,
+  contrato     Char(1) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL, 
+  PRIMARY KEY (
+      id_titulo
+  )
+) ENGINE=InnoDB ROW_FORMAT=DYNAMIC DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+ALTER TABLE titulos COMMENT = '';
 
 /*
   titulos
