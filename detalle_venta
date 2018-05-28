@@ -1,0 +1,123 @@
+
+CREATE TABLE detalle_venta (
+  id_tienda BigInt(6) NOT NULL,
+  num_orden NVarChar(20) COLLATE utf8_general_ci NOT NULL,
+  id_titulo NVarChar(8) COLLATE utf8_general_ci NOT NULL,
+  cantidad  BigInt(4),
+  descuento BigInt(2), 
+  PRIMARY KEY (
+      id_tienda, 
+      num_orden, 
+      id_titulo
+  )
+) ENGINE=InnoDB ROW_FORMAT=DYNAMIC DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'91-A-7','PS3333',90,45);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'91-A-7','TC3218',40,45);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'91-A-7','PS2106',30,45);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'91-V-7','PS2106',50,45);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'55-V-7','PS2106',31,45);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'91-A-7','MC3021',69,45);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'BS-345-DSE-860-1F2','PC1035',1000,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AX-532-FED-452-2Z7','BU2075',500,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AX-532-FED-452-2Z7','BU1032',200,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AX-532-FED-452-2Z7','BU7832',150,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AX-532-FED-452-2Z7','PS7777',125,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'NF-123-ADS-642-9G3','TC7777',1000,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'NF-123-ADS-642-9G3','BU1032',1000,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'NF-123-ADS-642-9G3','PC1035',750,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7131,'Fsoap867','BU1032',200,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7066,'BA52498','BU7832',100,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7066,'BA71224','PS7777',200,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7066,'BA71224','PC1035',300,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7066,'BA71224','TC7777',350,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZD-123-DFG-752-9G8','PS2091',1000,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-3.142','PS2091',200,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-3.142','PS7777',250,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-3.142','PS3333',345,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-3.142','BU7832',360,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'XS-135-DER-432-8J2','PS2091',845,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'XS-135-DER-432-8J2','PS7777',581,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZZ-999-ZZZ-999-0A0','PS1372',375,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-3.142','BU1111',175,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'XS-135-DER-432-8J2','BU7832',885,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZD-123-DFG-752-9G8','BU7832',900,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AX-532-FED-452-2Z7','TC4203',550,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7131,'Fsoap867','TC4203',350,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7896,'234518','TC4203',275,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7066,'BA71224','TC4203',500,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-3.142','TC4203',512,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7131,'Fsoap867','MC3021',400,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AX-532-FED-452-2Z7','PC8888',105,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7066,'BA71224','PC8888',350,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-3.142','PC8888',335,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7131,'Asoap432','BU1111',500,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7896,'234518','BU1111',340,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AX-532-FED-452-2Z7','BU1111',370,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZD-123-DFG-752-9G8','PS3333',750,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'13-J-9','BU7832',300,51);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'13-E-7','BU2075',150,51);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'13-E-7','BU1032',300,51);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'13-E-7','PC1035',400,51);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'91-A-7','PS7777',180,51);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'13-J-9','TC4203',250,51);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'13-E-7','TC4203',226,51);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'13-E-7','MC3021',400,51);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'91-V-7','BU1111',390,51);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AB-872-DEF-732-2Z1','MC3021',5000,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'NF-123-ADS-642-9G3','PC8888',2000,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'NF-123-ADS-642-9G3','BU2075',2000,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'GH-542-NAD-713-9F9','PC1035',2000,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZA-000-ASD-324-4D1','PC1035',2000,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZA-000-ASD-324-4D1','PS7777',1500,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZD-123-DFG-752-9G8','BU2075',3000,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZD-123-DFG-752-9G8','TC7777',1500,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZS-645-CAT-415-1B2','BU2075',3000,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'XS-135-DER-432-8J2','PS3333',2687,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'XS-135-DER-432-8J2','TC7777',1090,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'XS-135-DER-432-8J2','PC1035',2138,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZZ-999-ZZZ-999-0A0','MC2222',2032,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZZ-999-ZZZ-999-0A0','BU1111',1001,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZA-000-ASD-324-4D1','BU1111',1100,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'NF-123-ADS-642-9G3','BU7832',1400,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'BS-345-DSE-860-1F2','TC4203',2700,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'GH-542-NAD-713-9F9','TC4203',2500,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'NF-123-ADS-642-9G3','TC4203',3500,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'BS-345-DSE-860-1F2','MC3021',4500,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AX-532-FED-452-2Z7','MC3021',1600,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'NF-123-ADS-642-9G3','MC3021',2550,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZA-000-ASD-324-4D1','MC3021',3000,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZS-645-CAT-415-1B2','MC3021',3200,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'BS-345-DSE-860-1F2','BU2075',2200,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'GH-542-NAD-713-9F9','BU1032',1500,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'ZZ-999-ZZZ-999-0A0','PC8888',1005,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7896,'124152','BU2075',42,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7896,'124152','PC1035',25,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7131,'Asoap132','BU2075',35,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-1.142','PC1035',34,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-1.142','TC4203',53,50);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'12-F-9','BU2075',30,55);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'12-F-9','BU1032',94,55);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7066,'BA27618','BU2075',200,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7896,'124152','TC4203',350,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7066,'BA27618','TC4203',230,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7066,'BA27618','MC3021',200,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7131,'Asoap132','MC3021',137,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-1.142','MC3021',270,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-1.142','BU2075',230,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7131,'Asoap132','BU1032',345,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (7067,'NB-1.142','BU1032',136,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'12-F-9','TC4203',300,62);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'12-F-9','MC3021',270,62);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (8042,'12-F-9','PC1035',133,62);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AB-123-DEF-425-1Z3','TC4203',2500,60);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (5023,'AB-123-DEF-425-1Z3','BU2075',4000,60);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (6380,'342157','BU2075',200,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (6380,'342157','MC3021',250,57);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (6380,'356921','PS3333',200,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (6380,'356921','PS7777',500,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (6380,'356921','TC3218',125,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (6380,'234518','BU2075',135,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (6380,'234518','BU1032',320,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (6380,'234518','TC4203',300,46);
+INSERT INTO detalle_venta (id_tienda, num_orden, id_titulo, cantidad, descuento) VALUES (6380,'234518','MC3021',400,46);
