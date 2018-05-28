@@ -1,5 +1,5 @@
 
-CREATE TABLE Publicadores (
+CREATE TABLE publicadores (
   id_pub     Integer NOT NULL,
   nombre_pub VarChar(50) NOT NULL,
   ciudad     VarChar(50) NOT NULL,
