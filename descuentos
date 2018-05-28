@@ -1,0 +1,20 @@
+
+CREATE TABLE descuentos (
+  tipo_descuento VarChar(30),
+  id_tienda      Integer(4),
+  cant_min       Integer(6),
+  cant_max       Integer(6),
+  descuento      Float
+) ;
+ALTER TABLE descuentos COMMENT = '';
+
+/*
+  descuentos
+  ----------
+  Exporting all rows
+*/
+INSERT INTO descuentos (tipo_descuento, id_tienda, cant_min, cant_max, descuento) VALUES ('Inicial Customer', NULL, NULL, NULL, 10);
+INSERT INTO descuentos (tipo_descuento, id_tienda, cant_min, cant_max, descuento) VALUES ('Volume Discount', NULL, 100, 1000, 7);
+INSERT INTO descuentos (tipo_descuento, id_tienda, cant_min, cant_max, descuento) VALUES ('Huge Volume Discount', NULL, 1001, NULL, 10);
+INSERT INTO descuentos (tipo_descuento, id_tienda, cant_min, cant_max, descuento) VALUES ('Customer Discount', 8042, NULL, NULL, 5);
+/* 4 row(s) exported */
