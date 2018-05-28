@@ -9,3 +9,12 @@ CREATE TABLE Publicadores (
   )
 ) ;
 ALTER TABLE Publicadores COMMENT = '';
+﻿/*
+  publicadores
+  ------------
+  Exporting all rows
+*/
+INSERT INTO publicadores (id_pub, nombre_pub, ciudad, estado) VALUES (736, 'New_Age_Books', 'Boston', 'MA');
+INSERT INTO publicadores (id_pub, nombre_pub, ciudad, estado) VALUES (877, 'Binnet_&_Hardley', 'Washington', 'DC');
+INSERT INTO publicadores (id_pub, nombre_pub, ciudad, estado) VALUES (1389, 'Algodata_infosystems', 'Berkeley', 'CA');
+/* 3 row(s) exported */
