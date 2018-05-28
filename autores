@@ -1,0 +1,16 @@
+
+CREATE TABLE autores (
+  id_autor   VarChar(50) NOT NULL,
+  apellido   VarChar(50) NOT NULL,
+  nombre     VarChar(50) NOT NULL,
+  telefono   VarChar(50) NOT NULL,
+  direccion  VarChar(50) NOT NULL,
+  ciudad     VarChar(50) NOT NULL,
+  estado     VarChar(50) NOT NULL,
+  pais       VarChar(50) NOT NULL,
+  cod_postal VarChar(50) NOT NULL, 
+  PRIMARY KEY (
+      id_autor
+  )
+) ;
+ALTER TABLE Autores COMMENT = '';
