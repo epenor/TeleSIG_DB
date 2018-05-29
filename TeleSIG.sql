@@ -446,67 +446,10 @@ CREATE TABLE tiendas (
  terminos      VarChar(150), 
  PRIMARY KEY (Id_tienda));
  
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('1006', 'EL ABEJERO', 'C/MARIA TRINIDAD SANCHEZ', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'EFECTIVO
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('101', 'zara', '"Blue Mall', ' Av. Winston Churchill 80', ' Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('102', 'bershka', '"Blue Mall', ' Av. Winston Churchill 80', ' Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('103', 'antony`s', '"plaza central', 'Av 27 de Febrero', ' Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('104', 'forever21', '"?Agora Mall', ' Avenida John F.Kennedy Esquina Avenida Abraham Li', ' Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('105', 'bebemundo', '"Agora Mall', ' Avenida John F.Kennedy Esquina Avenida Abraham Li', ' Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('106', 'estradivarius', '"Agora Mall', ' Avenida John F.Kennedy Esquina Avenida Abraham Li', ' Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('107', 'punto intimo', '"Agora Mall', ' Avenida John F.Kennedy Esquina Avenida Abraham Li', ' Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('108', 'pikara fashion', '"Calle Jose Marti 225', ' Santo Domingo 10306"', 'santo domingo ', 'distrito nacional', 'repubi', '10604');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('109', 'expancitas', '"Aut. duarte Km. 8', ' Santo Domingo"', 'santo domingo ', 'distrito nacional', 'repubi', '10604');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('110', 'women secret', '"Av. John F. Kennedy', ' Santo Domingo"', 'santo domingo ', '', 'repubi', '10604');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('111', 'Chuleria', '"Avenida C Summer 6', ' Los Prados', ' Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('112', 'samary fashion', '"Prolongaci?n 1ra A Rosa ', ' Alma Rosa', '?Santo Domingo"', 'santo domingo ', 'santo ', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('113', 'el bazar de lili', '"Avenida Independencia 400', ' Miramar', '?Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('114', 'tienda nurys', '"Ant Duarte 76', '?Santo Domingo"', 'santo domingo ', 'santo domingo oeste', 'repubi', '11003');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('115', 'JR sport', '"Calle Albert Thomas 279', ' Espaillat', '?Santo Domingo"', 'santo domingo ', 'distri', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('116', 'Ikea', '"Av J F Kennedy 2', '?Santo Domingo"', 'santo domingo ', 'distrito nacional', 'repubi', '10604');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('117', 'betsi shop', '"Calle M Soila 8', ' Alma Rosa', '?Santo Domingo"', 'santo domingo ', 'santo ', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('118', 'Tikitikas Fashion Party', '"Calle 6 Norte 32 Ens Luperon ', ' Ensanche Luperon', ' Ensanche Luperon ', '?Santo Domingo"', 'santo ', 'distrito nacional');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('119', 'Republik', '"Avenida 27 De Febrero 344', ' Las Colinas', '?Santiago"', 'santiago de los caballeros', 'santia', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('120', 'Baratilandia', '"Carretera De Engombe 7', ' Engombe', ' Santo Domingo"', 'santo domingo ', 'santo ', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('12019', 'Tienda de Ceramicas', 'pantoja', 'Santo Domingo', 'santo domingo oeste', 'repubica dominicana', '10701', 'TARJETA
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('12023', 'Tienda Viva Jumbo SPM', '" Dentro del Supermercado Jumbo SPM', ' Calle Bienvenido Bustamante', ' San Pedro de Macoris"', 'san pedro de Macoris', 'san pe', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2010', 'Tienda La Primera', 'Calle San Antonio', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'EFECTIVO
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2012', 'El Hogar Macorisano', 'Prol. 27 de Febrero', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'EFECTIVO
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2014', 'Alex Boutique #Vip Cotu?,Av. Mar?a Trinidad S?nche', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'EFECTI', NULL);
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2015', 'elpidio motors', ' Av. Mella', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'TARJETA
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2016', 'Carlashoes', 'calle enrriquillo', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'EFECTIVO
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2021', 'Tienda 20 & 10', 'calle la isabela  en pantoja', 'Santo Domingo', 'santo domingo oeste', 'repubica dominicana', '10701', 'TARJETA
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2024', 'El Encanto El Embrujo', '" Kil?metro 3 ?', ' Autopista Duarte', ' Santiago De Los Caballeros 51000"', 'Santiago de los Caballeros', 'Santia', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2026', 'DEsteban', '"Calle Del Sol 70', ' Santiago De Los Caballeros 51000"', 'Santiago', 'Santiago', 'repubi', '51000');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2027', 'Super Tienda China', 'Santiago De Los Caballeros 51000', 'Santiago', 'Santiago', 'repubica dominicana', '51000', 'TARJETA
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2028', 'La Opera', '" Calle Del Sol 93', ' Santiago De Los Caballeros 51000"', 'Santiago', 'Santiago', 'repubi', '51000');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2029', 'La Sirena Bartolom? Col?n', 'Santiago De Los Caballeros', 'Santiago', 'Santiago', 'repubica dominicana', '51000', 'TARJETA
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('20817', 'Golden Apple', 'pantoja', 'Santo Domingo', 'santo domingo oeste', 'repubica dominicana', '10701', 'TARJETA
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('209', 'DIVAS', '"esq', ' Calle Mella & Calle Esteban Adames"', 'Cotui', 'Cotui', 'repubi', '43000');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('22018', 'Centro De Distribuci?n Plaza Lama', 'pantoja', 'Santo Domingo', 'santo domingo oeste', 'repubica dominicana', '10701', 'EFECTIVO
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('22020', 'Tienda Annabel', 'pantoja', 'Santo Domingo', 'santo domingo oeste', 'repubica dominicana', '10701', 'EFECTIVO
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('2708', 'CAPRICE', 'Calle Mella & Calle Padre Billini', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'EFECTIVO
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('28811', 'Tienda Daysy', 'Av. Mar?a Trinidad S?nchez', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'TARJETA
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('4007', 'LA CURACAO', 'C/MELLA #5', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'TARJETA
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('62030', 'Multicentro La Sirena Estrella Sadhal?,Santiago De', 'Santiago', 'Santiago', 'repubica dominicana', '51000', 'EFECTI', NULL);
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('72031', 'Vitasalud', '"Bartolome Colon Esq Texas', ' Santiago', ' Santiago"', 'Santiago', 'Santia', 'repubica dominicana');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('89013', 'EDWARD COMPUTADORA SRL', 'C/MARIA TRINIDAD SANCHEZ', 'Cotui', 'Cotui', 'repubica dominicana', '43000', 'TARJETA
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('92022', 'PC Store Tienda de Computadoras', 'Calle Prolongaci?n Independencia', 'san francisco de Macoris', 'san francisco de Macoris', 'repubica dominicana', '31000', 'EFECTIVO
-');
-INSERT INTO tiendas (Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado, pais, cod_postal, terminos) VALUES ('92025', 'El Encanto', ' Santiago De Los Caballeros', 'Santiago', 'Santiago', 'repubica dominicana', '51000', 'TARJETA
-');
+INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('7066','Barnums','567 Pasadena Ave.','Tustin','CA','USA','92789','Net 30')
+INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('7067','News & Brews','577 First St.','Los Gatos','CA','USA','96745','Net 30')
+INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('7131','Doc-U-Mat: Quality Laundry and Books','24-A Avrogado Way','Remulade','WA','USA','98014','Net 60')
+INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('8042','Bookbeat','679 Carson St.','Portland','OR','USA','89076','Net 30')
+INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('6380','Eric the Read Books','788 Catamaugus Ave.','Seattle','WA','USA','98056','Net 60')
+INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('7896','Fricative Bookshop','89 Madison St.','Fremont','CA','USA','90019','Net 60')
+INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('5023','Thoreau Reading Discount Chain','20435 Walden Expressway','Concord','MA','USA','1776','Net 60')
