@@ -1,4 +1,3 @@
-
 CREATE TABLE autores (
   id_autor   VarChar(12) NOT NULL,
   apellido   VarChar(50) NOT NULL,
