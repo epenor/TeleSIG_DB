@@ -1,14 +1,14 @@
 
 CREATE TABLE autores (
-  id_autor   VarChar(50) NOT NULL,
+  id_autor   VarChar(12) NOT NULL,
   apellido   VarChar(50) NOT NULL,
   nombre     VarChar(50) NOT NULL,
-  telefono   VarChar(50) NOT NULL,
-  direccion  VarChar(50) NOT NULL,
-  ciudad     VarChar(50) NOT NULL,
-  estado     VarChar(50) NOT NULL,
+  telefono   VarChar(15) NOT NULL,
+  direccion  VarChar(150) NOT NULL,
+  ciudad     VarChar(40) NOT NULL,
+  estado     VarChar(40) NOT NULL,
   pais       VarChar(50) NOT NULL,
-  cod_postal VarChar(50) NOT NULL, 
+  cod_postal VarChar(8) NOT NULL, 
   PRIMARY KEY (
       id_autor
   )
@@ -40,7 +40,7 @@ INSERT INTO autores (id_autor, apellido, nombre, telefono, direccion, ciudad, es
 /* 23 row(s) exported */
 
 CREATE TABLE derechos (
-  id_titulo  NVarChar(6) COLLATE utf8_general_ci NOT NULL,
+  id_titulo  VarChar(8) NOT NULL,
   rango_bajo Integer(5) NOT NULL,
   rango_alto Integer(5) NOT NULL,
   derechos   Integer(2) NOT NULL, 
@@ -153,11 +153,11 @@ INSERT INTO descuentos (tipo_descuento, id_tienda, cant_min, cant_max, descuento
 /* 4 row(s) exported */
 
 CREATE TABLE detalle_venta (
-  id_tienda BigInt(6) NOT NULL,
-  num_orden NVarChar(20) COLLATE utf8_general_ci NOT NULL,
-  id_titulo NVarChar(8) COLLATE utf8_general_ci NOT NULL,
-  cantidad  BigInt(4),
-  descuento BigInt(2), 
+  id_tienda Integer(6) NOT NULL,
+  num_orden NVarChar(20) NOT NULL,
+  id_titulo NVarChar(8)  NOT NULL,
+  cantidad  Integer(4),
+  descuento Integer(2), 
   PRIMARY KEY (
       id_tienda, 
       num_orden, 
@@ -290,8 +290,8 @@ INSERT INTO publicadores (id_pub, nombre_pub, ciudad, estado) VALUES (877, 'Binn
 INSERT INTO publicadores (id_pub, nombre_pub, ciudad, estado) VALUES (1389, 'Algodata_infosystems', 'Berkeley', 'CA');
 /* 3 row(s) exported */
 CREATE TABLE titulo_autor (
-  id_autor  Char(11) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  id_titulo Char(6) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  id_autor  VarChar(11) NOT NULL,
+  id_titulo VarChar(7) NOT NULL,
   ord_au    Integer(11),
   derechos  Integer(11), 
   PRIMARY KEY (
@@ -334,9 +334,9 @@ CREATE TABLE titulos (
   precio       Double,
   avance       Double,
   total_ventas Double,
-  notas        Text CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+  notas        Text,
   fecha_pub    DateTime NOT NULL,
-  contrato     Char(1) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL, 
+  contrato     Char(1) NOT NULL, 
   PRIMARY KEY (
       id_titulo
   )
@@ -361,61 +361,61 @@ INSERT INTO titulos (id_titulo, titulo, tipo, id_pub, precio, avance, total_vent
 INSERT INTO titulos (id_titulo, titulo, tipo, id_pub, precio, avance, total_ventas, notas, fecha_pub, contrato) VALUES ('TC7777', 'Sushi, Anyone?', 'trad_cook', '0877', 15, 8000, 4095, 'Detailed instructions on improving your position in life by learning how to make authentic Japanese sushi in your spare time.  5-10% increase in number of friends per recipe reported from beta test.', '1987/06/12 00:00:00.000', '1');
 /* 18 row(s) exported */
 CREATE TABLE ventas (
- id_tienda VarChar(8) NOT NULL,
+ id_tienda Integer(6) NOT NULL,
  num_orden VarChar(20) NOT NULL,
  fecha     Date NOT NULL, 
  PRIMARY KEY (id_tienda)) ;
  
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('1006', '4', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('101', '1', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('102', '2', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('103', '3', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('104', '4', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('105', '5', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('106', '6', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('107', '7', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('108', '8', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('109', '9', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('110', '10', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('111', '11', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('112', '12', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('113', '13', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('114', '14', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('115', '15', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('116', '16', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('117', '17', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('118', '18', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('119', '19', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('120', '20', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('12019', '56', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('12023', '72', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2010', '20', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2012', '28', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2014', '36', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2015', '40', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2016', '44', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2021', '64', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2024', '76', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2026', '84', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2027', '88', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2028', '92', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2029', '96', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('20817', '48', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('209', '16', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('22018', '52', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('22020', '60', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('2708', '12', '2018/05/15');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('28811', '24', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('4007', '8', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('62030', '100', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('72031', '104', '2018/05/24');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('89013', '32', '2018/05/17');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('92022', '68', '2018/05/07');
-INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES ('92025', '80', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (1006, '4', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (101, '1', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (102, '2', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (103, '3', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (104, '4', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (105, '5', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (106, '6', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (107, '7', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (108, '8', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (109, '9', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (110, '10', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (111, '11', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (112, '12', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (113, '13', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (114, '14', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (115, '15', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (116, '16', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (117, '17', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (118, '18', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (119, '19', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (120, '20', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (12019, '56', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (12023, '72', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2010, '20', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2012, '28', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2014, '36', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2015, '40', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2016, '44', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2021, '64', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2024, '76', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2026, '84', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2027, '88', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2028, '92', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2029, '96', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (20817, '48', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (209, '16', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (22018, '52', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (22020, '60', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (2708, '12', '2018/05/15');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (28811, '24', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (4007, '8', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (62030, '100', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (72031, '104', '2018/05/24');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (89013, '32', '2018/05/17');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (92022, '68', '2018/05/07');
+INSERT INTO ventas (id_tienda, num_orden, fecha) VALUES (92025, '80', '2018/05/17');
 /* 47 row(s) exported */
 CREATE TABLE biografias (
-  id_autor  VarChar(11) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  biografia Text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL, 
+  id_autor  VarChar(11) NOT NULL,
+  biografia Text NOT NULL, 
   PRIMARY KEY (
       id_autor
   )
@@ -428,7 +428,7 @@ INSERT INTO biografias (id_autor, biografia) VALUES ('899-46-2035', 'Anne Ringer
 INSERT INTO biografias (id_autor, biografia) VALUES ('998-72-3567', 'Albert Ringer was born in a trunk to circus parents, but another kind of circus trunk played a more important role in his life years later.  He grew up as an itinerant wrestler and roustabout in the reknowned Ringer Brothers and Betty and Bernie''s Circus.  Once known in the literary world only as Anne Ringer''s wrestling brother, he became a writer while recuperating from a near-fatal injury received during a charity benefit bout with a gorilla.  "Slingshotting" himself from the ring ropes, Albert flew over the gorilla''s head and would have landed head first on the concrete.  He was saved from certain death by Nana, an elephant he befriended as a child, who caught him in her trunk.  Nana held him so tightly that three ribs cracked and he turned blue from lack of oxygen.  "I was delirious.  I had an out-of-body experience!  My whole life passed before me.  I promised myself ''If I get through this, I''ll use my remaining time to share what I learned out there.''  I owe it all to Nana!"');
 /* 6 row(s) exported */
 CREATE TABLE fotografias (
-  id_autor   VarChar(12) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  id_autor   VarChar(11) NOT NULL,
   fotografia LongBLOB, 
   PRIMARY KEY (
       id_autor
@@ -436,20 +436,20 @@ CREATE TABLE fotografias (
 );
 
 CREATE TABLE tiendas (
- Id_tienda     VarChar(8) NOT NULL,
+ id_tienda     Integer(6) NOT NULL,
  nombre_tienda VarChar(50) NOT NULL,
  direcc_tienda VarChar(150),
- ciudad        VarChar(50),
- estado        VarChar(50),
+ ciudad        VarChar(40),
+ estado        VarChar(40),
  pais          VarChar(50),
- cod_postal    VarChar(6),
+ cod_postal    VarChar(8),
  terminos      VarChar(150), 
  PRIMARY KEY (Id_tienda));
  
-INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('7066','Barnums','567 Pasadena Ave.','Tustin','CA','USA','92789','Net 30');
-INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('7067','News & Brews','577 First St.','Los Gatos','CA','USA','96745','Net 30');
-INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('7131','Doc-U-Mat: Quality Laundry and Books','24-A Avrogado Way','Remulade','WA','USA','98014','Net 60');
-INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('8042','Bookbeat','679 Carson St.','Portland','OR','USA','89076','Net 30');
-INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('6380','Eric the Read Books','788 Catamaugus Ave.','Seattle','WA','USA','98056','Net 60');
-INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('7896','Fricative Bookshop','89 Madison St.','Fremont','CA','USA','90019','Net 60');
-INSERT INTO tiendas(Id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES ('5023','Thoreau Reading Discount Chain','20435 Walden Expressway','Concord','MA','USA','1776','Net 60');
+INSERT INTO tiendas(id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES (7066,'Barnums','567 Pasadena Ave.','Tustin','CA','USA','92789','Net 30');
+INSERT INTO tiendas(id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES (7067,'News & Brews','577 First St.','Los Gatos','CA','USA','96745','Net 30');
+INSERT INTO tiendas(id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES (7131,'Doc-U-Mat: Quality Laundry and Books','24-A Avrogado Way','Remulade','WA','USA','98014','Net 60');
+INSERT INTO tiendas(id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES (8042,'Bookbeat','679 Carson St.','Portland','OR','USA','89076','Net 30');
+INSERT INTO tiendas(id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES (6380,'Eric the Read Books','788 Catamaugus Ave.','Seattle','WA','USA','98056','Net 60');
+INSERT INTO tiendas(id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES (7896,'Fricative Bookshop','89 Madison St.','Fremont','CA','USA','90019','Net 60');
+INSERT INTO tiendas(id_tienda, nombre_tienda, direcc_tienda, ciudad, estado ,pais, cod_postal, terminos) VALUES (5023,'Thoreau Reading Discount Chain','20435 Walden Expressway','Concord','MA','USA','1776','Net 60');
