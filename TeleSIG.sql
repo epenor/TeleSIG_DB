@@ -326,10 +326,10 @@ INSERT INTO titulo_autor (id_autor, id_titulo, ord_au, derechos) VALUES ('998-72
 INSERT INTO titulo_autor (id_autor, id_titulo, ord_au, derechos) VALUES ('998-72-3567', 'PS2106', 1, 100);
 /* 25 row(s) exported */
 CREATE TABLE titulos (
-  id_titulo    VarChar(7) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  titulo       VarChar(30) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  tipo         VarChar(15) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  id_pub       VarChar(6) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  id_titulo    VarChar(7) NOT NULL,
+  titulo       VarChar(30) NOT NULL,
+  tipo         VarChar(15) NOT NULL,
+  id_pub       VarChar(6) NOT NULL,
   precio       Double,
   avance       Double,
   total_ventas Double,
